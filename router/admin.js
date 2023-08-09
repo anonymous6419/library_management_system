@@ -29,4 +29,6 @@ router.get("book/get/:id", Book.get);
 router.get("book/update/:id/", Book.update);
 router.get("book/delete/:id", Book.delete);
 
+router.post("/issuebook", Admin.issueBookToUser);
+router.post("/returnbook", Admin.returnBook);
 module.exports = router;

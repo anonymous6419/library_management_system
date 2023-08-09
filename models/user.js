@@ -18,32 +18,32 @@ const userSchema = new mongoose.Schema({
         maxlength:10,
         required:true
     },
-    address:{
-        houseno:{
-            type:String,
-            minlength:1,
-            maxlength:5
-        },
-        societyname:{
-            type:String,
-            required:true
-        },
-        landmark:{
-            type:String,
-            required:true
-        },
-        pincode:{
-            type:Number,
-            minlength:3,
-            maxlength:6
-        }
-        },
-        isIssuedBook:{
-            type:mongoose.Schema.Types.ObjectId,
-            ref : "book",
-            required : true
-        },
+    // address:{
+    //     houseno:{
+    //         type:String,
+    //         minlength:1,
+    //         maxlength:5
+    //     },
+    //     societyname:{
+    //         type:String,
+    //         required:true
+    //     },
+    //     landmark:{
+    //         type:String,
+    //         required:true
+    //     },
+    //     pincode:{
+    //         type:Number,
+    //         minlength:3,
+    //         maxlength:6
+    //     }
+    //     },
+    //     isIssuedBook:{
+    //         type:mongoose.Schema.Types.ObjectId,
+    //         ref : "book",
+    //         required : true
+    //     },
         
 },{timestamps:true})
 
-module.exports = mongoose.model("user",userSchema);
+module.exports = mongoose.model("user1",userSchema);
